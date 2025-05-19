@@ -6,8 +6,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        myAct(10);
-        Console.WriteLine($"\n{myFunc(10)}");
+        // myAct(10);
+        // Console.WriteLine($"\n{myFunc(10)}");
+
+        
+
     }
 
     // Un Action es un delegado: encapsula un metodo void

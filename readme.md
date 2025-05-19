@@ -4,7 +4,8 @@
 
 * Un Action es un delegado: encapsula un metodo void:
 ```csharp
-public static Action<int> myAct = (x) => Console.WriteLine($"\n{DateTime.Now.AddDays(x)}\n");
+public static Action<int> myAct = (x) => 
+  Console.WriteLine($"\n{DateTime.Now.AddDays(x)}\n");
 ```
 
 * Un Func es un delegado: encapsula un metodo con retorno:
