@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Data;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Csharp_Practice;
 
@@ -9,8 +10,22 @@ class Program
         // myAct(10);
         // Console.WriteLine($"\n{myFunc(10)}");
 
-        
 
+
+    }
+
+    record MiEmpleado(int Id, string Nombre, DateTime FecCont);
+    // Estructura
+    public struct Empleados
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+
+        public Empleados(int id, string name)
+        {
+            this.Id = id;
+            this.Nombre = name;
+        }        
     }
 
     // Un Action es un delegado: encapsula un metodo void
